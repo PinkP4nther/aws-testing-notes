@@ -24,3 +24,6 @@
   - Attach volume to instance: (aws ec2 attach-volume --volume-id vol-0b5715a658be546c5 --instance-id i-058ad74f95e9d9050 --device /dev/sdf)
   - SSH in and take a look at the volume (find important files/pwds/keys/src)
   
+6.) Get metadata through HTTP proxy on ec2 instance
+  - AWS has a running instance for metadata at the webserver here: http://169.254.169.254/
+  -
