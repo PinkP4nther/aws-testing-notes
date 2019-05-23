@@ -16,7 +16,7 @@
 4.) Use key to get user information
   - Get user info: (aws --profile flaws sts get-caller-identity)
   - Is snapshot open to everyone?: (aws ec2 describe-snapshot-attribute --snapshot-id snap-0b49342abd1bdcb89 --attribute createVolumePermission --profile flaws --region <REGION-HERE-IF_NOT-IN-CRED-PROFILE>)
-  - If CreateVolumePemissions has Group: all then yes we can create a volume out of the snapshot
+  - If CreateVolumePemissions has Group: all, then yes we can create a volume out of the snapshot
   - Get snapshots from user id: (aws --profile flaws ec2 describe-snapshots --owner-id 975426262029 --region <REGION-HERE-IF_NOT-IN-CRED-PROFILE>)
 
 5.) Use key to get public snapshot
