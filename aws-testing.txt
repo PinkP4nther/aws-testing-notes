@@ -21,4 +21,5 @@
 
 5.) Use key to get public snapshot
   - Create volume from public snapshot: (aws ec2 create-volume --availability-zone <ZONE> --region <REGION-HERE-IF_NOT-IN-CRED-PROFILE> --snapshot-id snap-0b49342abd1bdcb89)
+  - 
   
