@@ -1,0 +1,38 @@
+Security of the AWS infrastructure
+  - AWS operates under a shared security responsibility model
+    - You are responsible for securing workloads you deploy / AWS is responsible for the security of the underlying cloud infrastructure
+    - This gives you flexibility and agility to implement applicable security controls
+    - Structure:
+        You Handle:
+          + Customer apps & content
+          -------------------------
+          + Network Security
+          + Inventory & Config
+          + Data Security
+          + AC (Access Control)
+          -------------------------
+        AWS Handles:
+          + AWS Foundation Services
+            -> Compute
+            -> Storage
+            -> Database
+            -> Networking
+           ------------------------
+          + AWS Global Infrastructure:
+            -> Availability Zones
+            -> Regions
+            -> Edge Locations
+
+Security Products and Features
+  - AWS and it's partners offer a wide range of tools for security objectives.
+    - Network Security
+      + Built-in firewalls that allow you to create private networks within AWS and control network access to your instances and subnets
+      + Encryption with TLS across all services
+      + Connectivity options that enable private or dedicated connections from wherever you are
+      + DDoS mitigation tech as part of your auto scaling or CDS (Content Delivery Strategy).
+    - Inventory and Configuration Management
+      + Deployment tools to manage the creation and decommissioning of AWS resources according to organization standards
+      + Inventory and config management tools to ID AWS resourcces and then track and manage changes to those resources over time
+      + Template definition and management tools to create standard, preconfig'd, hardened, VMs for EC2 instances
+    - Data Encryption
+      + 
