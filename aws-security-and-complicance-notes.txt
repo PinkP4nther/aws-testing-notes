@@ -35,4 +35,15 @@ Security Products and Features
       + Inventory and config management tools to ID AWS resourcces and then track and manage changes to those resources over time
       + Template definition and management tools to create standard, preconfig'd, hardened, VMs for EC2 instances
     - Data Encryption
-      + 
+      + With encryption you can add an extra layer of security to your cloud data
+      + Data encryption capabilities available in AWS storage and DB services, like EBS,S#,Glacier,Oracle,Oracle RDS, SQL Server RDS, and Redshift
+      + Flexible key management options allow the choice to have AWS manage the keys or let you keep control over the keys
+      + There are also dedicated, hardware-based crytpographic key storage options for customers to help satisfy complicance needs
+      + Can integrate encryption and data protection for your services you create/deploy using an API
+    - Access Control
+      + AWS offers capabilities to define,enforce, and manage user access policies across AWS services
+      + Identity and access management capabilities to define individual user accounts with permissions across AWS resources
+      + Multifactor authentication for privileged accounts, including options for hardware-based authenticators
+      + Integration, and federation, corporate directories to reduce administrative overhead and improve end-user experience
+      + AWS provides native identity an access management itegration across many services. and API integration with your own apps/services
+      
