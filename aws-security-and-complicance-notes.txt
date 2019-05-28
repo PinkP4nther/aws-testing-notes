@@ -67,7 +67,7 @@ Security Guidance
     + Helps customers develop security policies and procedures based on well-proven designs.
     + Ensures customers' security design meets internal and external comliance and requirements.
     + The AWS Partner Network has hundreds of certified AWS Consulting Partners worldwide to help customers wih their security and compliance needs
-   - AWS Advisories and Bulletins
+  - AWS Advisories and Bulletins
     + AWS provides advisories around current vulnerabilities and threats, and enables customers to work with AWS security experts to address concerns like reporting abuse, vulnerabilities, and pentesting
 
 Compliance
