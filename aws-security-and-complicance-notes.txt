@@ -72,6 +72,6 @@ Security Guidance
 
 Compliance
   - AWS environments are continually audited to make sure everything is up to standard
-  - AWS is fully compliant with EU data rpotection laws
-  - AWS allows you to take advantage of automated tools likeL AWS Config and AWS CloudTrail for validating compliance
+  - AWS is fully compliant with EU data protection laws
+  - AWS allows you to take advantage of automated tools like AWS Config and AWS CloudTrail for validating compliance
   - These tools can reduce the effort needed to perform audits
