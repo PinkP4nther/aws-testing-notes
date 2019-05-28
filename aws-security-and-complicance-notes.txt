@@ -46,4 +46,32 @@ Security Products and Features
       + Multifactor authentication for privileged accounts, including options for hardware-based authenticators
       + Integration, and federation, corporate directories to reduce administrative overhead and improve end-user experience
       + AWS provides native identity an access management itegration across many services. and API integration with your own apps/services
-      
+    - Monitoring and Logging
+      + AWS provides tools and features that let you see whats going on in your environment
+        -> Deep visibility into API calls, who, what, when, and from where calls are made
+        -> Log aggregation and options, streamlining investigations and compliance reporting
+        -> Notifications when events occur or thresholds are exceeded
+       + These tools and features give the visibility needed to spot issues before they impact businessesand allow you to improve security posture and reduce the risks in your environment
+       
+Security Guidance
+  - AWS provides customers with guidance and expertise through online tools, resources, support, and professional services provided by AWS and it's partners.
+  - AWS Trusted Advisor
+    + An online tool that acts like a customized cloud expert, it helps you configure your resources and help you follow best practices
+    + It will inspect your AWS environment and help close security gaps. It will even find ways to help you save money, improve system performance, and increase reliability
+  - AWS Account Teams
+    + Can help guide through deployment and implmentation, and pointing you toward resources that can help resolve security issues
+  - AWS Enterprise Support
+    + Provides 15 minute response time and is available 24/7 by phone, chat, or email.
+    + You will also have a dedicated Technical Account Manager, this helps ensure customers' issues are addressed swiftly
+  - AWS Professional Services and AWS Partner Network
+    + Helps customers develop security policies and procedures based on well-proven designs.
+    + Ensures customers' security design meets internal and external comliance and requirements.
+    + The AWS Partner Network has hundreds of certified AWS Consulting Partners worldwide to help customers wih their security and compliance needs
+   - AWS Advisories and Bulletins
+    + AWS provides advisories around current vulnerabilities and threats, and enables customers to work with AWS security experts to address concerns like reporting abuse, vulnerabilities, and pentesting
+
+Compliance
+  - AWS environments are continually audited to make sure everything is up to standard
+  - AWS is fully compliant with EU data rpotection laws
+  - AWS allows you to take advantage of automated tools likeL AWS Config and AWS CloudTrail for validating compliance
+  - These tools can reduce the effort needed to perform audits
